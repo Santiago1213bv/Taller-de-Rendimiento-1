@@ -43,7 +43,7 @@ BIN_FILAS   = mmFilasOpenMP
 
 # Regla principal: compila todo
 all: $(BIN_FORK) $(BIN_POSIX) $(BIN_OPENMP) $(BIN_FILAS)
-	@echo "✅ Compilación completa. Ejecutables listos."
+	@echo " Compilación completa. Ejecutables listos."
 
 # Versión Fork (procesos)
 $(BIN_FORK): $(SRC_FORK)
@@ -64,4 +64,4 @@ $(BIN_FILAS): $(SRC_FILAS)
 # Limpieza de ejecutables
 clean:
 	rm -f $(BIN_FORK) $(BIN_POSIX) $(BIN_OPENMP) $(BIN_FILAS)
-	@echo "🧹 Archivos compilados eliminados."
+	@echo "Archivos compilados eliminados."
